@@ -1,13 +1,13 @@
-# yars
+# robotsim
 
-Yet Another Robot Simulation, WIP
+Robot simulation, WIP
 
 ## Installation
 
 Via npm on Node:
 
 ```
-npm install yars
+npm install robotsim
 ```
 
 ## Usage
@@ -30,8 +30,8 @@ TBD
 
 ## Contribution
 
-Feel free to [file issues](https://github.com/ajlopez/yars) and submit
-[pull requests](https://github.com/ajlopez/yars/pulls) — contributions are
+Feel free to [file issues](https://github.com/ajlopez/robotsim) and submit
+[pull requests](https://github.com/ajlopez/robotsim/pulls) — contributions are
 welcome.
 
 If you submit a pull request, please be sure to add or update corresponding
