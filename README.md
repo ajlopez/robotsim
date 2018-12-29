@@ -46,6 +46,9 @@ See tests
 ## References
 
 - [An Introductory Robot Programming Tutorial](https://www.toptal.com/robotics/programming-a-robot-an-introductory-tutorial)
+- [How to check if two given line segments intersect?](https://www.geeksforgeeks.org/check-if-two-given-line-segments-intersect/)
+- [How to check if a given point lies inside or outside a polygon?](https://www.geeksforgeeks.org/how-to-check-if-a-given-point-lies-inside-a-polygon/)
+- [Luminance](https://en.wikipedia.org/wiki/Luminance)
 
 ## Samples
 
