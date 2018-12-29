@@ -10,6 +10,33 @@ Via npm on Node:
 npm install robotsim
 ```
 
+## Objetives
+
+### Environment
+
+- Have a two-dimension environment
+- Have light sources in environment
+- Have obstables in environment (initially, simple rectangles)
+
+### Robot
+
+- One or more robots
+- Distance sensors, with orientation
+- Light sensors, with orientation
+- Movement actions (ie: two wheels, or only advance distance and turn)
+- Sensors with noise
+- Action actuators (ie: wheels) with noise (ie: wheel slip)
+
+### Strategies
+
+- Hardwired programming
+- Evolutionary programming
+
+### Interface
+
+- Environment canvas/SVG display in browser
+- Consumed as a library, from browser or command line
+
 ## Usage
 
 TBD
