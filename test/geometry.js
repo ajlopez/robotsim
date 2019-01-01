@@ -10,6 +10,20 @@ exports['create point'] = function (test) {
     test.equal(point.y(), 2);
 };
 
+exports['move point'] = function (test) {
+    var point = geometry.point(1, 2);
+    
+    var distance = 2;
+    var orientation = 30;
+    
+    var result = point.move(distance, orientation);
+    
+    test.ok(result);
+    test.equal(typeof result, 'object');
+    test.equal(result.x(), 2);
+    test.ok(Math.abs(result.y() - (2 + Math.sqrt(3))) <= 0.0000001);
+};
+
 exports['create line'] = function (test) {
     var p1 = geometry.point(1, 2);
     var p2 = geometry.point(3, 4);
