@@ -24,6 +24,16 @@ exports['move point'] = function (test) {
     test.ok(Math.abs(result.y() - (2 + Math.sqrt(3))) <= 0.0000001);
 };
 
+exports['distance between points'] = function (test) {
+    var point1 = geometry.point(1, 2);
+    var point2 = geometry.point(2, 3);
+    var point3 = geometry.point(3, 2);
+    
+    test.equal(point1.distance(point2), Math.sqrt(2));
+    test.equal(point2.distance(point1), Math.sqrt(2));
+    test.equal(point1.distance(point3), 2);
+};
+
 exports['create line'] = function (test) {
     var p1 = geometry.point(1, 2);
     var p2 = geometry.point(3, 4);
