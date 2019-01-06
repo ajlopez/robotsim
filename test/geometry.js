@@ -48,3 +48,11 @@ exports['create line'] = function (test) {
     test.equal(line.to().y(), 4);
 };
 
+exports['line length'] = function (test) {
+    var p1 = geometry.point(1, 2);
+    var p2 = geometry.point(3, 4);
+    
+    var line = geometry.line(p1, p2);
+    
+    test.equal(line.length(), Math.sqrt(8));
+};
