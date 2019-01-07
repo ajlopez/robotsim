@@ -56,3 +56,15 @@ exports['line length'] = function (test) {
     
     test.equal(line.length(), Math.sqrt(8));
 };
+
+exports['create polygon'] = function (test) {
+    var point1 = geometry.point(1, 2);
+    var point2 = geometry.point(2, 3);
+    var point3 = geometry.point(1, 4);
+    
+    var polygon = geometry.polygon([ point1, point2, point3 ]);
+    
+    test.ok(polygon);
+    test.equal(typeof polygon, 'object');
+};
+
