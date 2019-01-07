@@ -10,6 +10,22 @@ exports['create point'] = function (test) {
     test.equal(point.y(), 2);
 };
 
+exports['point equals'] = function (test) {
+    var point1 = geometry.point(1, 2);
+    var point2 = geometry.point(2, 3);
+    var point3 = geometry.point(1, 2);
+    
+    test.ok(point1.equals(point1));
+    test.ok(!point1.equals(point2));
+    test.ok(!point2.equals(point1));
+    test.ok(point1.equals(point3));
+    test.ok(point3.equals(point1));
+    
+    test.ok(!point1.equals(null));
+    test.ok(!point1.equals(42));
+    test.ok(!point1.equals("foo"));
+};
+
 exports['move point'] = function (test) {
     var point = geometry.point(1, 2);
     
