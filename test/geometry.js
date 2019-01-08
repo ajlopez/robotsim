@@ -84,3 +84,22 @@ exports['create polygon'] = function (test) {
     test.equal(typeof polygon, 'object');
 };
 
+exports['polygon points'] = function (test) {
+    var point1 = geometry.point(1, 2);
+    var point2 = geometry.point(2, 3);
+    var point3 = geometry.point(1, 4);
+    
+    var points = [ point1, point2, point3 ];
+    
+    var polygon = geometry.polygon(points);
+    
+    var result = polygon.points();
+    
+    test.ok(result);
+    test.ok(Array.isArray(result));
+    test.equal(result.length, points.length);
+    
+    for (var k = 0; k < points.length; k++)
+        test.ok(result[k].equals(points[k]));
+};
+
